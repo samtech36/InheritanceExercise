@@ -28,12 +28,53 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
-
+            
+            var myBird = new Bird();
+            myBird.WingColor = "green";
+            myBird.CanFly = true;
+            myBird.DoMigrate = true;
+            myBird.WingLength = 10;
+            
+            myBird.Wing();
+            myBird.Fly();
+            
+            
+            
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
+             *
+             * Creatively display the class member values
              */
+
+            var myReptile = new Reptile()
+            {
+                IsColdBlooded = true,
+                IsFrozen = true,
+                Habitat = "swamp",
+                CanGrow = true
+                
+            };
+
+            myReptile.BodyTemperature();
+            myReptile.Conditions();
+            
+            //Animal class
+            
+
+            var myAnimal = new Animal()
+            {
+                AnimalType = "Zebra",
+                IsAlive = true,
+                Age = 10,
+                LegCount = 4,
+                LandSeaAir = "land"
+
+            };
+            
+            myAnimal.AnimalProperties();
+
+            
+
         }
     }
 }
